@@ -31,7 +31,7 @@ public class GhostMovement : MonoBehaviour
         if (pac != null && pac.isSuper)
             sr.color = Color.blue;
         else
-            sr.color = Color.red;
+            sr.color = Color.white;
 
         // Random movement
         if (Random.value < 0.01f)

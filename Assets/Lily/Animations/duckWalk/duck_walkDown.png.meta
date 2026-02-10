@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0eabf71fbff1a57439d83784d4da6030
+guid: ca5bd05936b885b44b04cacdcd31edce
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,74 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 57
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b5dad4b72708c044809ce736b7c94f9
-      internalID: -1594833167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_1
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 57
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 797f834a70c75be4bbeabb905935b568
-      internalID: -1974587442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 57
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf010c8cd3d117e4f933e961f505c6e2
-      internalID: -1400842722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_3
+      name: duck_walkDown_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 2
+        y: 52
         width: 50
         height: 50
       alignment: 0
@@ -174,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ba1e78b79984248abe75bb98543fe8
-      internalID: -1553652233
+      spriteID: c5cf22c5b6e660b4d9599d7a4e3a34c8
+      internalID: 1634455978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_4
+      name: duck_walkDown_1
       rect:
         serializedVersion: 2
-        x: 58
-        y: 2
+        x: 62
+        y: 51
         width: 50
         height: 50
       alignment: 0
@@ -195,18 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: babc3de07137f284baa4be4b9d60745d
-      internalID: 319927182
+      spriteID: aed43b515f538a54c9fdd70534f83f5f
+      internalID: 2133033992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_5
+      name: duck_walkDown_2
       rect:
         serializedVersion: 2
-        x: 117
-        y: 2
+        x: 116
+        y: 51
         width: 50
         height: 50
       alignment: 0
@@ -216,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0c8f98edb7016647a7fea9e6dfca7ec
-      internalID: 215455391
+      spriteID: cf3aa7c5f8d234143b9e70dcfdbbaa09
+      internalID: -1177033829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck_walkDown_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3292a66876e1b4681043ec77073319
+      internalID: -503555579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck_walkDown_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76c8ea93aaf70644a9bed2f37196965
+      internalID: 30491373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck_walkDown_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c7b67ae0dc0e5459e2dcc5f48a0c05
+      internalID: -1186351521
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking_east_sprite_sheet_0: -1594833167
-      walking_east_sprite_sheet_1: -1974587442
-      walking_east_sprite_sheet_2: -1400842722
-      walking_east_sprite_sheet_3: -1553652233
-      walking_east_sprite_sheet_4: 319927182
-      walking_east_sprite_sheet_5: 215455391
+      duck_walkDown_0: 1634455978
+      duck_walkDown_1: 2133033992
+      duck_walkDown_2: -1177033829
+      duck_walkDown_3: -503555579
+      duck_walkDown_4: 30491373
+      duck_walkDown_5: -1186351521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

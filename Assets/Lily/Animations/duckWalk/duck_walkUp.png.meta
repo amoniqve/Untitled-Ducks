@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0eabf71fbff1a57439d83784d4da6030
+guid: bd682ad50920db2458058fc6e67cc42d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_0
+      name: duck_walkUp_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 57
+        x: 1
+        y: 53
         width: 50
         height: 50
       alignment: 0
@@ -111,18 +111,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5dad4b72708c044809ce736b7c94f9
-      internalID: -1594833167
+      spriteID: 505f4b415bafadd4e8dd663b204ba1ab
+      internalID: 755613792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_1
+      name: duck_walkUp_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 57
+        x: 61
+        y: 52
         width: 50
         height: 50
       alignment: 0
@@ -132,81 +132,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797f834a70c75be4bbeabb905935b568
-      internalID: -1974587442
+      spriteID: 3d9153eb2a2b1bd42acb046ff3974fca
+      internalID: 507800488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 57
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf010c8cd3d117e4f933e961f505c6e2
-      internalID: -1400842722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_3
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 2
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12ba1e78b79984248abe75bb98543fe8
-      internalID: -1553652233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_4
-      rect:
-        serializedVersion: 2
-        x: 58
-        y: 2
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: babc3de07137f284baa4be4b9d60745d
-      internalID: 319927182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_5
+      name: duck_walkUp_2
       rect:
         serializedVersion: 2
         x: 117
-        y: 2
+        y: 53
         width: 50
         height: 50
       alignment: 0
@@ -216,8 +153,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0c8f98edb7016647a7fea9e6dfca7ec
-      internalID: 215455391
+      spriteID: 1d96ddc9462830748a8448c2dc4807a7
+      internalID: 1273412324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck_walkUp_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99367836970e56241be9c7eb0a85a40e
+      internalID: 1840332985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck_walkUp_4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d156dbb7bcd88c74d99d88c374b91c68
+      internalID: 1315437804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duck_walkUp_5
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f2b803f5b3cd8489506b8aefceff25
+      internalID: -205325826
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking_east_sprite_sheet_0: -1594833167
-      walking_east_sprite_sheet_1: -1974587442
-      walking_east_sprite_sheet_2: -1400842722
-      walking_east_sprite_sheet_3: -1553652233
-      walking_east_sprite_sheet_4: 319927182
-      walking_east_sprite_sheet_5: 215455391
+      duck_walkUp_0: 755613792
+      duck_walkUp_1: 507800488
+      duck_walkUp_2: 1273412324
+      duck_walkUp_3: 1840332985
+      duck_walkUp_4: 1315437804
+      duck_walkUp_5: -205325826
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

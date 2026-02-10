@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0eabf71fbff1a57439d83784d4da6030
+guid: 8fc538aa4eec37a4bba3dada8867504f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,11 +97,74 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_0
+      name: walking_north_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 58
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ee84f0717cdb648aeaf134a8d29c46
+      internalID: -54837615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_north_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 57
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf32a006d124168459fc95e2424c9a0e
+      internalID: 298139340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_north_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 57
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18059899704083f4f8d94ce4e990c5b8
+      internalID: 1311476663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_north_sprite_sheet_3
       rect:
         serializedVersion: 2
         x: 3
-        y: 57
+        y: 3
         width: 50
         height: 50
       alignment: 0
@@ -111,59 +174,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5dad4b72708c044809ce736b7c94f9
-      internalID: -1594833167
+      spriteID: 41ea801392d41084d93b676d571c4d88
+      internalID: -1257891535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_1
+      name: walking_north_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 56
-        y: 57
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 797f834a70c75be4bbeabb905935b568
-      internalID: -1974587442
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 118
-        y: 57
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf010c8cd3d117e4f933e961f505c6e2
-      internalID: -1400842722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_3
-      rect:
-        serializedVersion: 2
-        x: 2
+        x: 57
         y: 2
         width: 50
         height: 50
@@ -174,17 +195,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ba1e78b79984248abe75bb98543fe8
-      internalID: -1553652233
+      spriteID: e293be322574fc145b9ddf06b09e00a1
+      internalID: -1851757306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking_east_sprite_sheet_4
+      name: walking_north_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 58
+        x: 116
         y: 2
         width: 50
         height: 50
@@ -195,29 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: babc3de07137f284baa4be4b9d60745d
-      internalID: 319927182
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_east_sprite_sheet_5
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 2
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0c8f98edb7016647a7fea9e6dfca7ec
-      internalID: 215455391
+      spriteID: 8b77e50123502024b8bc9f563a674020
+      internalID: 78389750
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking_east_sprite_sheet_0: -1594833167
-      walking_east_sprite_sheet_1: -1974587442
-      walking_east_sprite_sheet_2: -1400842722
-      walking_east_sprite_sheet_3: -1553652233
-      walking_east_sprite_sheet_4: 319927182
-      walking_east_sprite_sheet_5: 215455391
+      walking_north_sprite_sheet_0: -54837615
+      walking_north_sprite_sheet_1: 298139340
+      walking_north_sprite_sheet_2: 1311476663
+      walking_north_sprite_sheet_3: -1257891535
+      walking_north_sprite_sheet_4: -1851757306
+      walking_north_sprite_sheet_5: 78389750
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

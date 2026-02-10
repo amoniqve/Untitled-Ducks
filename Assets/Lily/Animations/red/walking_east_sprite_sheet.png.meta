@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0eabf71fbff1a57439d83784d4da6030
+guid: 939beee4bca5a0d4f9a4dfc68bf612e5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,7 +100,7 @@ TextureImporter:
       name: walking_east_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 6
         y: 57
         width: 50
         height: 50
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b5dad4b72708c044809ce736b7c94f9
-      internalID: -1594833167
+      spriteID: 203b58e769c9ea246beb9a48fff5cb66
+      internalID: -1304358051
       vertices: []
       indices: 
       edges: []
@@ -121,7 +121,7 @@ TextureImporter:
       name: walking_east_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 56
+        x: 60
         y: 57
         width: 50
         height: 50
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797f834a70c75be4bbeabb905935b568
-      internalID: -1974587442
+      spriteID: 0a5511c0b8ce6774eb7a5fd2de1906a3
+      internalID: -655468496
       vertices: []
       indices: 
       edges: []
@@ -142,7 +142,7 @@ TextureImporter:
       name: walking_east_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 118
+        x: 116
         y: 57
         width: 50
         height: 50
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf010c8cd3d117e4f933e961f505c6e2
-      internalID: -1400842722
+      spriteID: c16edcbac99bc52458a81378516ba446
+      internalID: 796518564
       vertices: []
       indices: 
       edges: []
@@ -163,8 +163,8 @@ TextureImporter:
       name: walking_east_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
+        x: 5
+        y: 3
         width: 50
         height: 50
       alignment: 0
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12ba1e78b79984248abe75bb98543fe8
-      internalID: -1553652233
+      spriteID: 4f229552d019d7840afdc6c8a22bfb9c
+      internalID: 2125910875
       vertices: []
       indices: 
       edges: []
@@ -184,8 +184,8 @@ TextureImporter:
       name: walking_east_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 58
-        y: 2
+        x: 60
+        y: 3
         width: 50
         height: 50
       alignment: 0
@@ -195,8 +195,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: babc3de07137f284baa4be4b9d60745d
-      internalID: 319927182
+      spriteID: ba7ad732b59744b4f825f32844f1d519
+      internalID: 191755435
       vertices: []
       indices: 
       edges: []
@@ -206,7 +206,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 117
-        y: 2
+        y: 3
         width: 50
         height: 50
       alignment: 0
@@ -216,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0c8f98edb7016647a7fea9e6dfca7ec
-      internalID: 215455391
+      spriteID: cc0d90500e28c9a41af980aa9b5694e0
+      internalID: 1805088368
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking_east_sprite_sheet_0: -1594833167
-      walking_east_sprite_sheet_1: -1974587442
-      walking_east_sprite_sheet_2: -1400842722
-      walking_east_sprite_sheet_3: -1553652233
-      walking_east_sprite_sheet_4: 319927182
-      walking_east_sprite_sheet_5: 215455391
+      walking_east_sprite_sheet_0: -1304358051
+      walking_east_sprite_sheet_1: -655468496
+      walking_east_sprite_sheet_2: 796518564
+      walking_east_sprite_sheet_3: 2125910875
+      walking_east_sprite_sheet_4: 191755435
+      walking_east_sprite_sheet_5: 1805088368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
