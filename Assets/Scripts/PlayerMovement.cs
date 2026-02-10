@@ -28,19 +28,15 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Update direction if possible
         if (CanMove(nextDirection))
-        {
             currentDirection = nextDirection;
-        }
 
+        // Move if possible
         if (CanMove(currentDirection))
-        {
             rb.velocity = currentDirection * speed;
-        }
         else
-        {
             rb.velocity = Vector2.zero;
-        }
 
         CheckWrap();
     }
@@ -48,12 +44,10 @@ public class PlayerMovement : MonoBehaviour
     bool CanMove(Vector2 dir)
     {
         if (dir == Vector2.zero) return false;
-
         RaycastHit2D hit = Physics2D.Raycast(rb.position, dir, 0.6f, LayerMask.GetMask("Walls"));
         return hit.collider == null;
     }
 
-    // Horizontal wrap-around
     void CheckWrap()
     {
         Vector3 pos = transform.position;
@@ -66,14 +60,26 @@ public class PlayerMovement : MonoBehaviour
         transform.position = pos;
     }
 
-    // Optional: Detect dots
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Dot"))
         {
             Destroy(collision.gameObject);
-            // Optionally increase score here
+            // GameManager automatically detects win in Update()
+        }
+
+        if (collision.CompareTag("Enemy"))
+        {
+            PacManPowerUp pac = GetComponent<PacManPowerUp>();
+            if (pac != null && pac.isSuper)
+            {
+                // Ghost will handle respawn
+            }
+            else
+            {
+                FindObjectOfType<GameOverManager>().ShowGameOver();
+                rb.velocity = Vector2.zero;
+            }
         }
     }
 }
-

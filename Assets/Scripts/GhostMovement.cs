@@ -55,7 +55,6 @@ public class GhostMovement : MonoBehaviour
             }
         }
     }
-
     void ChooseDirection()
     {
         int rand = Random.Range(0, 4);
