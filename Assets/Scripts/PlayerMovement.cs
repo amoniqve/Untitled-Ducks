@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;                 
+    public Transform spawnPoint; // Drag your PlayerSpawn here in Inspector
+
     private Rigidbody2D rb;
 
     private Vector2 currentDirection = Vector2.zero;   
@@ -12,9 +14,16 @@ public class PlayerMovement : MonoBehaviour
     private float leftX = -18f;
     private float rightX = 18f;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Move player to spawn immediately
+        if (spawnPoint != null)
+            transform.position = spawnPoint.position;
+
+        // Make sure player is not moving at start
+        rb.velocity = Vector2.zero;
     }
 
     void Update()
@@ -65,21 +74,26 @@ public class PlayerMovement : MonoBehaviour
         if (collision.CompareTag("Dot"))
         {
             Destroy(collision.gameObject);
-            // GameManager automatically detects win in Update()
         }
 
         if (collision.CompareTag("Enemy"))
         {
             PacManPowerUp pac = GetComponent<PacManPowerUp>();
             if (pac != null && pac.isSuper)
-            {
-                // Ghost will handle respawn
-            }
-            else
-            {
-                FindObjectOfType<GameOverManager>().ShowGameOver();
-                rb.velocity = Vector2.zero;
-            }
+                return;
+
+            Respawn();
+            FindObjectOfType<GameOverManager>().ShowGameOver();
         }
+    }
+
+    public void Respawn()
+    {
+        if (spawnPoint != null)
+            transform.position = spawnPoint.position;
+
+        rb.velocity = Vector2.zero;
+        currentDirection = Vector2.zero;
+        nextDirection = Vector2.zero;
     }
 }
