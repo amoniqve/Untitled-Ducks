@@ -3,6 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;                 
+    public Transform spawnPoint; // Drag your PlayerSpawn here in Inspector
+
     private Rigidbody2D rb;
 
     private Vector2 currentDirection = Vector2.zero;   
@@ -12,9 +14,16 @@ public class PlayerMovement : MonoBehaviour
     private float leftX = -18f;
     private float rightX = 18f;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        // Move player to spawn immediately
+        if (spawnPoint != null)
+            transform.position = spawnPoint.position;
+
+        // Make sure player is not moving at start
+        rb.velocity = Vector2.zero;
     }
 
     void Update()
@@ -28,19 +37,15 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Update direction if possible
         if (CanMove(nextDirection))
-        {
             currentDirection = nextDirection;
-        }
 
+        // Move if possible
         if (CanMove(currentDirection))
-        {
             rb.velocity = currentDirection * speed;
-        }
         else
-        {
             rb.velocity = Vector2.zero;
-        }
 
         CheckWrap();
     }
@@ -48,12 +53,10 @@ public class PlayerMovement : MonoBehaviour
     bool CanMove(Vector2 dir)
     {
         if (dir == Vector2.zero) return false;
-
         RaycastHit2D hit = Physics2D.Raycast(rb.position, dir, 0.6f, LayerMask.GetMask("Walls"));
         return hit.collider == null;
     }
 
-    // Horizontal wrap-around
     void CheckWrap()
     {
         Vector3 pos = transform.position;
@@ -66,14 +69,31 @@ public class PlayerMovement : MonoBehaviour
         transform.position = pos;
     }
 
-    // Optional: Detect dots
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Dot"))
         {
             Destroy(collision.gameObject);
-            // Optionally increase score here
+        }
+
+        if (collision.CompareTag("Enemy"))
+        {
+            PacManPowerUp pac = GetComponent<PacManPowerUp>();
+            if (pac != null && pac.isSuper)
+                return;
+
+            Respawn();
+            FindObjectOfType<GameOverManager>().ShowGameOver();
         }
     }
-}
 
+    public void Respawn()
+    {
+        if (spawnPoint != null)
+            transform.position = spawnPoint.position;
+
+        rb.velocity = Vector2.zero;
+        currentDirection = Vector2.zero;
+        nextDirection = Vector2.zero;
+    }
+}
