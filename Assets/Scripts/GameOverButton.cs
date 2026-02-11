@@ -12,6 +12,6 @@ public class GameOverButton : MonoBehaviour
     
     public void QuitToMenu()
     {
-        SceneManager.LoadScene("MainMenu"); 
+        SceneManager.LoadScene("TitleScreen"); 
     }
 }

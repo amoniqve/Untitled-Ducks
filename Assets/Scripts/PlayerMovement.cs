@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5f;                 
-    public Transform spawnPoint; // Drag your PlayerSpawn here in Inspector
+    public Transform spawnPoint; 
 
     private Rigidbody2D rb;
 
@@ -18,17 +18,17 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // Move player to spawn immediately
+        
         if (spawnPoint != null)
             transform.position = spawnPoint.position;
 
-        // Make sure player is not moving at start
+        
         rb.velocity = Vector2.zero;
     }
 
     void Update()
     {
-        // Get input for next direction
+        
         if (Input.GetKey(KeyCode.W)) nextDirection = Vector2.up;
         if (Input.GetKey(KeyCode.S)) nextDirection = Vector2.down;
         if (Input.GetKey(KeyCode.A)) nextDirection = Vector2.left;
@@ -37,11 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Update direction if possible
+        
         if (CanMove(nextDirection))
             currentDirection = nextDirection;
 
-        // Move if possible
+        
         if (CanMove(currentDirection))
             rb.velocity = currentDirection * speed;
         else
