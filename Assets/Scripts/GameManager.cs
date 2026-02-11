@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI livesText;  
 
     [Header("Game Settings")]
-    public int lives = 3;               // Knight lives
-    public float nextLevelDelay = 2f;   // delay before loading next level
+    public int lives = 3;               
+    public float nextLevelDelay = 2f;   
     public float fadeDuration = 1f;     
 
     private PacManPowerUp pacMan;
@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
         UpdateLivesUI(); 
 
-        // Adjust ghost speeds based on level :)
+        
         string levelName = SceneManager.GetActiveScene().name;
         foreach (var ghost in ghosts)
         {
@@ -49,13 +49,18 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        // Win condition: all dots collected yay <3
+        
         if (GameObject.FindGameObjectsWithTag("Dot").Length == 0)
         {
             if (SceneManager.GetActiveScene().name == "Level2")
-                StartCoroutine(ShowTextAndEnd("You Win!"));
+            {
+                
+                StartCoroutine(ShowTextAndLoadWinScene("You Win!"));
+            }
             else
+            {
                 StartCoroutine(ShowTextAndNextLevel("Next Level"));
+            }
         }
     }
 
@@ -66,17 +71,17 @@ public class GameManager : MonoBehaviour
 
         if (lives > 0)
         {
-            // Respawn Knighty at start btw change the start
+            
             pacMan.Respawn();
 
-            // Reset all ghosts to start positions, only one for now
+            
             foreach (var ghost in ghosts)
                 ghost.RespawnGhost();
         }
         else
         {
-            // Game over womp womp :(
-            StartCoroutine(ShowTextAndEnd("You Lose!"));
+            
+            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -96,13 +101,22 @@ public class GameManager : MonoBehaviour
         LoadNextLevel();
     }
 
+    IEnumerator ShowTextAndLoadWinScene(string message)
+    {
+        if (winText == null) yield break;
+
+        winText.text = message;
+        yield return StartCoroutine(FadeText());
+        SceneManager.LoadScene("YouWinScene"); 
+    }
+
     IEnumerator ShowTextAndEnd(string message)
     {
         if (winText == null) yield break;
 
         winText.text = message;
         yield return StartCoroutine(FadeText());
-        Time.timeScale = 0f; // pause game at end maybe??
+        Time.timeScale = 0f; 
     }
 
     IEnumerator FadeText()
@@ -110,7 +124,7 @@ public class GameManager : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < fadeDuration)
         {
-            elapsed += Time.unscaledDeltaTime; // unscaled so works even if game is paused
+            elapsed += Time.unscaledDeltaTime; 
             if (winText != null)
                 winText.alpha = Mathf.Clamp01(elapsed / fadeDuration);
             yield return null;
